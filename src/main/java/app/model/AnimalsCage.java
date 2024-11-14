@@ -13,11 +13,6 @@ public class AnimalsCage {
     @Autowired
     private Timer timer;
 
-    public AnimalsCage(@Qualifier("dog") Animal animal, Timer timer) {
-        this.animal = animal;
-        this.timer = timer;
-    }
-
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
